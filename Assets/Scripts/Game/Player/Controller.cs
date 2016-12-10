@@ -131,8 +131,17 @@ public class Controller : MonoBehaviour
             if (canMove)
             {
 
+            if (Input.GetAxis("Horizontal") != 0)
+            {
+                float maxSpeedStrafe = maxSpeed + 0.1f;
+                if (rb.velocity.x <= maxSpeedStrafe)
+                {
 
-                if (Input.GetAxis("Vertical") != 0 && grounded)
+                    rb.velocity += Input.GetAxis("Horizontal") * (transform.right * (speedModifier - 20f) * Time.deltaTime); 
+                    running = true;
+                }
+            }
+            if (Input.GetAxis("Vertical") != 0 && grounded)
                 {
 
                     //clipLength = anim.clip.length;
@@ -213,6 +222,7 @@ public class Controller : MonoBehaviour
 
 
                 }
+            
                 #endregion
             }
         }
