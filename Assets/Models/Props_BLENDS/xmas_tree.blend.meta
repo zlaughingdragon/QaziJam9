@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 3e20b9a05ca3ff04198ff5e0bd5154ec
+timeCreated: 1481444575
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cylinder
+    100002: Icosphere
+    100004: NurbsPath
+    100006: NurbsPath_001
+    100008: ornament
+    100010: ornament_001
+    100012: ornament_002
+    100014: ornament_003
+    100016: ornament_004
+    100018: ornament_005
+    100020: ornament_006
+    100022: ornament_007
+    100024: ornament_008
+    100026: ornament_009
+    100028: ornament_010
+    100030: ornament_011
+    100032: ornament_012
+    100034: ornament_013
+    100036: ornament_014
+    100038: //RootNode
+    400000: Cylinder
+    400002: Icosphere
+    400004: NurbsPath
+    400006: NurbsPath_001
+    400008: ornament
+    400010: ornament_001
+    400012: ornament_002
+    400014: ornament_003
+    400016: ornament_004
+    400018: ornament_005
+    400020: ornament_006
+    400022: ornament_007
+    400024: ornament_008
+    400026: ornament_009
+    400028: ornament_010
+    400030: ornament_011
+    400032: ornament_012
+    400034: ornament_013
+    400036: ornament_014
+    400038: //RootNode
+    2300000: Cylinder
+    2300002: Icosphere
+    2300004: NurbsPath
+    2300006: NurbsPath_001
+    2300008: ornament
+    2300010: ornament_001
+    2300012: ornament_002
+    2300014: ornament_003
+    2300016: ornament_004
+    2300018: ornament_005
+    2300020: ornament_006
+    2300022: ornament_007
+    2300024: ornament_008
+    2300026: ornament_009
+    2300028: ornament_010
+    2300030: ornament_011
+    2300032: ornament_012
+    2300034: ornament_013
+    2300036: ornament_014
+    3300000: Cylinder
+    3300002: Icosphere
+    3300004: NurbsPath
+    3300006: NurbsPath_001
+    3300008: ornament
+    3300010: ornament_001
+    3300012: ornament_002
+    3300014: ornament_003
+    3300016: ornament_004
+    3300018: ornament_005
+    3300020: ornament_006
+    3300022: ornament_007
+    3300024: ornament_008
+    3300026: ornament_009
+    3300028: ornament_010
+    3300030: ornament_011
+    3300032: ornament_012
+    3300034: ornament_013
+    3300036: ornament_014
+    4300000: Icosphere
+    4300002: ornament_014
+    4300004: ornament_013
+    4300006: ornament_012
+    4300008: ornament_011
+    4300010: ornament_010
+    4300012: ornament_009
+    4300014: ornament_007
+    4300016: ornament_006
+    4300018: ornament_005
+    4300020: ornament_004
+    4300022: ornament_003
+    4300024: NurbsPath_001
+    4300026: ornament_008
+    4300028: ornament_001
+    4300030: NurbsPath
+    4300032: ornament_002
+    4300034: ornament
+    4300036: Cylinder
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
