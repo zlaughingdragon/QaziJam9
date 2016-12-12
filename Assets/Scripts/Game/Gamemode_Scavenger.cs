@@ -23,6 +23,7 @@ public class Gamemode_Scavenger : MonoBehaviour {
 
     void Start()
     {
+        gameStart = true;
         timer = baseTime;
         itemsToBeFound = GameObject.FindGameObjectsWithTag("item").Length;
     }
@@ -36,7 +37,12 @@ public class Gamemode_Scavenger : MonoBehaviour {
         }
         else { timer = baseTime; }
 
-        if(timer <= 60 && timer > 50)
+        if(timer < baseTime && timer > (baseTime - 10))
+        {
+            notify_text.text = "Use the 'E' key to pick things up, or left click.";
+        }
+
+        else if(timer <= 60 && timer > 50)
         {
             notify_text.text = "One minute left! Hurry!";
         } else if(timer <= 30 && timer > 20)
@@ -74,6 +80,7 @@ public class Gamemode_Scavenger : MonoBehaviour {
         {
             PlayerPrefs.SetFloat("AchievedTime", timer);
             PlayerPrefs.SetFloat("Collected Items", foundItems);
+            PlayerPrefs.SetFloat("Score", timer * foundItems);
             PlayerPrefs.SetInt("Completed", 1);
             SceneManager.LoadScene("Win");
         }
@@ -96,6 +103,8 @@ public class Gamemode_Scavenger : MonoBehaviour {
         {
             foundItems++;
             Destroy(tmp);
+            pickup = false;
+            tmp = null;
         }
     }
 
@@ -106,6 +115,15 @@ public class Gamemode_Scavenger : MonoBehaviour {
             print("found item " + other.gameObject.name);
             pickup = true;
             tmp = other.gameObject;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("item"))
+        {
+            
+            pickup = false;
+            tmp = null;
         }
     }
 
