@@ -105,7 +105,6 @@ public class Controller : MonoBehaviour
         }
         void Update()
         {
-
             if (Input.GetButton("Sprint"))
             {
                 sprint = true;
@@ -130,6 +129,10 @@ public class Controller : MonoBehaviour
 
             if (canMove)
             {
+            if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+            {
+                transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("walk_flashlight");
+            } else { transform.GetChild(0).GetChild(0).GetComponent<Animator>().Play("idle_flashlight"); }
 
             if (Input.GetAxis("Horizontal") != 0)
             {

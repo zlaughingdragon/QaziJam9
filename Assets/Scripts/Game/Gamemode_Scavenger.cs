@@ -1,26 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+
+using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
+
+using System.Configuration;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+
 public class Gamemode_Scavenger : MonoBehaviour {
 
-    public bool gameStart, gameWin, gameFail;
+    public bool gameStart, gameWin, gameFail, pickup;
 
     public Text timer_text, foundItems_text, notify_text;
 
-    public float foundItems, itemsToBeFound, itemsLeft, timer, baseTime = 300;
+    public float foundItems, itemsToBeFound, itemsLeft, timer, baseTime = 300, score = 0;
+
+    
 
     void Start()
     {
         timer = baseTime;
-        gameStart = true;
+        itemsToBeFound = GameObject.FindGameObjectsWithTag("item").Length;
     }
 
     void FixedUpdate()
     {
+        itemsLeft = itemsToBeFound - foundItems;
         if (gameStart)
         {
             timer -= Time.deltaTime;
@@ -33,7 +42,7 @@ public class Gamemode_Scavenger : MonoBehaviour {
         } else if(timer <= 30 && timer > 20)
         {
             notify_text.text = "30 seconds left! Hurry!";
-        } else if(timer <= 10)
+        } else if(timer <= 10 && timer > 4)
         {
             notify_text.text = "10 seconds left! Hurry!";
         }
@@ -44,17 +53,60 @@ public class Gamemode_Scavenger : MonoBehaviour {
 
         if(timer <= 0)
         {
-            if(SceneManager.GetSceneByName("Loss") != null)
-            SceneManager.LoadScene("Loss");
+            Cursor.lockState = CursorLockMode.None;
+            timer = 0;
+            gameFail = true;
         }
 
-    }
 
+
+
+
+        score = foundItems * timer;
+
+
+        if(foundItems >= itemsToBeFound && timer > 0.01f)
+        {
+            gameWin = true;
+        }
+
+        if (gameWin)
+        {
+            PlayerPrefs.SetFloat("AchievedTime", timer);
+            PlayerPrefs.SetFloat("Collected Items", foundItems);
+            PlayerPrefs.SetInt("Completed", 1);
+            SceneManager.LoadScene("Win");
+        }
+        else if (gameFail)
+        {
+            PlayerPrefs.SetFloat("AchievedTime", 0);
+            PlayerPrefs.SetFloat("Collected Items", foundItems);
+            PlayerPrefs.SetInt("Completed", 1);
+            SceneManager.LoadScene("Loss");
+        } 
+
+    }
+    GameObject tmp;
     void Update()
     {
         timer_text.text = "Time Left: " + timer.ToString("F0");
+        foundItems_text.text = "Items: " + foundItems.ToString("F0") + "/" + itemsToBeFound.ToString("F0");
 
+        if (Input.GetButtonDown("Pickup") && pickup)
+        {
+            foundItems++;
+            Destroy(tmp);
+        }
+    }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("item"))
+        {
+            print("found item " + other.gameObject.name);
+            pickup = true;
+            tmp = other.gameObject;
+        }
     }
 
 }
