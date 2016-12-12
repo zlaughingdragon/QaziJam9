@@ -119,7 +119,12 @@ public class Controller : MonoBehaviour
         void FixedUpdate()
         {
 
-
+       
+            GetComponent<Gamemode_Scavenger>().stamExhaust = sprint;
+        if(GetComponent<Gamemode_Scavenger>().stamina <= 30)
+        {
+            maxSpeed = 5f;
+        }
 
             #region movement -- GET AXIS provides a positive or negative 1 if player is pressing. Direction is based on this.
 
