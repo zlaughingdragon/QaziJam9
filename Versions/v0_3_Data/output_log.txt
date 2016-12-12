@@ -1,0 +1,113 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
+    Driver:   10.18.10.4276
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.763 seconds
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Unity3d\Projects\PC_PROJECTS\GIT\QaziJam9\Versions\v0_3_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 59Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.468053 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: f24 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+The tree tree couldn't be instanced because the prefab contains no valid mesh renderer.
+ 
+(Filename:  Line: 160)
+
+UnloadTime: 42.984909 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3387.
+Total: 2.512851 ms (FindLiveObjects: 0.314055 ms CreateObjectMapping: 0.088263 ms MarkObjects: 1.137166 ms  DeleteObjects: 0.972544 ms)
+
+found item hot_coco
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item snowglobe
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item xmas_tree
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_green
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_green (1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_green (1)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_red
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item snowman
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item candycane
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item wreath
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+found item present_cyan
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 13.241221 ms
+
+Unloading 169 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 8.573499 ms (FindLiveObjects: 0.094832 ms CreateObjectMapping: 0.080463 ms MarkObjects: 0.663415 ms  DeleteObjects: 7.731914 ms)
+
+UnloadTime: 2.358492 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.545183 ms (FindLiveObjects: 0.057063 ms CreateObjectMapping: 0.047621 ms MarkObjects: 0.422024 ms  DeleteObjects: 0.016421 ms)
+
+UnloadTime: 0.633447 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.390413 ms (FindLiveObjects: 0.052137 ms CreateObjectMapping: 0.037768 ms MarkObjects: 0.287370 ms  DeleteObjects: 0.012315 ms)
+
+UnloadTime: 0.555446 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.435571 ms (FindLiveObjects: 0.059526 ms CreateObjectMapping: 0.036126 ms MarkObjects: 0.325139 ms  DeleteObjects: 0.013547 ms)
+

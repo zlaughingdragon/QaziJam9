@@ -5799,8 +5799,8 @@ MonoBehaviour:
   timer_solid: {fileID: 1752793176}
   item_radial: {fileID: 455389012}
   item_solid: {fileID: 403439482}
-  stam_radial: {fileID: 0}
-  stam_solid: {fileID: 0}
+  stam_radial: {fileID: 986690722}
+  stam_solid: {fileID: 1379464126}
   foundItems: 0
   itemsToBeFound: 0
   itemsLeft: 0
@@ -14188,9 +14188,9 @@ RectTransform:
   m_Father: {fileID: 1505999975}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 344, y: -391}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -50, y: 52}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1526239763
